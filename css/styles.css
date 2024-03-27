@@ -275,6 +275,7 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  margin-bottom: 8px;
   text-align: center;
 }
 
@@ -318,12 +319,12 @@ img {
 .our-team-list {
   display: flex;
   /* flex-wrap: wrap; */
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
   /* gap: 24px; */
   gap: 72px;
   text-align: center;
- }
+}
 
 .team-card-item {
   background: #fff;
@@ -947,10 +948,6 @@ img {
 
 .benefits-list {
   gap: 72px 24px;
-}
-
-.benefits-list-item {
-  flex-basis: calc((100% - 24px) / 2);
 }
 
 .benefits-title {

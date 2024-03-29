@@ -970,10 +970,16 @@ img {
 
   .benefits-list {
     gap: 72px 24px;
+    
   }
 
   .our-team-list {
     gap: 64px 24px;
+  }
+
+  .benefits-list-item {
+    width: 356px;
+    
   }
 
   .benefits-title {

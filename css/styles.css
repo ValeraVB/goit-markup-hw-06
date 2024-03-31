@@ -37,7 +37,6 @@ img {
 }
 
 .container {
-  /* width: 1158px; */
   max-width: 320px;
   margin: 0 auto;
   padding-left: 16px;
@@ -88,7 +87,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  /* margin-right: 76px; */
   padding: 17px 0;
 }
 
@@ -97,68 +95,14 @@ img {
 }
 
 .page-nav-list {
-  /* display: flex;
-  gap: 40px; */
   display: none;
 }
-
-/* .header-nav-link {
-  color: #2e2f42;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  justify-content: space-around;
-  text-align: center;
-  padding: 24px 0;
-  display: block;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-nav-link:hover,
-.header-nav-link:focus {
-  color: #404bbf;
-}
-
-.current {
-  position: relative;
-  color: #404bbf;
-}
-
-.current::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  background-color: #404bbf;
-  border-radius: 2px;
-  height: 4px;
-  width: 100%;
-} */
 
 .address {
   font-style: normal;
   margin-left: auto;
   display: none;
 }
-
-.address-list {
-  /* display: flex;
-  gap: 40px; */
-}
-
-/* .address-link {
-  color: #434455;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address-link:hover,
-.address-link:focus {
-  color: #404bbf;
-} */
 
 .open-menu-btn {
   padding: 0;
@@ -171,7 +115,7 @@ img {
 .mob-menu {
   position: fixed;
   top: 0;
-  left:0;
+  left: 0;
   background: #fff;
   width: 100vw;
   height: 100%;
@@ -182,6 +126,7 @@ img {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+  z-index: 999;
 }
 
 .menu-close-btn {
@@ -248,8 +193,7 @@ img {
 .mob-address-link:hover,
 .mob-address-link:focus {
   color: #404bbf;
-} 
-
+}
 
 .mob-social-list {
   display: flex;
@@ -287,7 +231,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/hero/hero-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -295,17 +239,25 @@ img {
   max-width: 1440px;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-wrap {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../images/hero/hero-mob@2x.jpg);
+  }
+}
+
 .hero-wrap {
-  /* padding: 188px; */
   padding: 72px;
   text-align: center;
 }
 
 .hero-title {
   color: #fff;
-  /* font-size: 56px;
-  font-weight: 700;
-  line-height: 1.07; */
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -313,7 +265,6 @@ img {
   text-align: center;
   max-width: 496px;
   margin: 0 auto;
-  /* margin-bottom: 48px; */
   margin-bottom: 72px;
 }
 
@@ -346,8 +297,6 @@ img {
 /** ==============BENEFITS================ */
 
 .benefits {
-  /* padding-top: 120px;
-  padding-bottom: 120px; */
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -355,17 +304,11 @@ img {
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 24px; */
   gap: 72px;
-  /* flex-shrink: 0;
-  overflow: hidden;
-  text-align: center; */
 }
 
 .benefits-list-item {
-  /* flex-basis: calc((100% - 3 * 24px) / 4); */
   width: 288px;
-  /* text-align: left; */
 }
 
 .benefits-icon-cart {
@@ -375,16 +318,12 @@ img {
   height: 112px;
   background-color: #f4f4fd;
   margin-bottom: 8px;
-  /* display: flex; */
   align-items: center;
   justify-content: center;
   display: none;
 }
 
 .benefits-title {
-  /* font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2; */
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -396,7 +335,6 @@ img {
 }
 
 .benefits-text {
-  /* font-weight: 400; */
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -411,8 +349,6 @@ img {
 .our-team {
   background: #f4f4fd;
   text-align: center;
-  /* padding-top: 120px;
-  padding-bottom: 120px; */
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -436,7 +372,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* gap: 24px; */
   gap: 72px;
   text-align: center;
 }
@@ -446,8 +381,7 @@ img {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   border-radius: 0 0 4px 4px;
-  /* flex-basis: calc((100% - 3 * 24px) / 4); */
-  width: 100%;
+  width: 264px;
 }
 
 .team-image {
@@ -537,12 +471,10 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 48px;
-  /* gap: 24px;
-  row-gap: 48px; */
-  margin-bottom: 640px;
 }
 
 .portfolio-cart-item {
+  cursor: pointer;
   background: #fff;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -614,9 +546,7 @@ img {
 
 .footer {
   background: #2e2f42;
-  /* padding: 100px 0; */
   padding: 96px 0;
-  display: none;
 }
 
 .container-footer {
@@ -626,9 +556,10 @@ img {
 }
 
 .footer-logo-container {
+  display: flex;
+  flex-wrap: wrap;
   width: 264px;
-  /* margin-right: 120px; */
-  margin-left: 93px;
+  justify-content: center;
 }
 
 .logo-webstudio-footer {
@@ -665,6 +596,7 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
+  justify-content: center;
 }
 
 .studio-color-footer {
@@ -677,11 +609,13 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  margin-bottom: 72px;
 }
 
 .footer-social-container {
-  /* margin-right: 80px; */
-  margin-left: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .social-media {
@@ -691,11 +625,13 @@ img {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .footer-social-list {
   display: flex;
   gap: 16px;
+  margin-bottom: 72px;
 }
 
 .footer-social-list .footer-social-link {
@@ -716,7 +652,10 @@ img {
 
 .footer-form {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
 
 .footer-input {
@@ -1075,6 +1014,26 @@ img {
     padding: 112px;
   }
 
+  .hero {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../images/hero/hero-tab.jpg);
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-wrap {
+      background-image: linear-gradient(
+          rgba(17, 17, 17, 0.4),
+          rgba(17, 17, 17, 0.4)
+        ),
+        url(../images/hero/hero-tab@2x.jpg);
+    }
+  }
+
   .hero-title {
     font-size: 56px;
     line-height: 1.07;
@@ -1097,10 +1056,6 @@ img {
     text-align: left;
   }
 
-  .team-card-item {
-    flex-basis: calc((100% - 24px) / 2);
-  }
-
   .our-portfolio-list {
     display: flex;
     flex-wrap: wrap;
@@ -1113,16 +1068,27 @@ img {
     width: calc((100% - 24px) / 2);
   }
 
-  .footer {
-    display: flex;
+  .footer-logo-container {
+    justify-content: left;
+    margin-right: 24px;
+    margin-left: 92px;
   }
 
-  .footer-logo-container {
-    margin-bottom: 76px;
+  .footer-social-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-media {
+    text-align: left;
   }
 
   .footer-bottom {
     margin-left: 93px;
+  }
+
+  .footer-form {
+    gap: 24px;
   }
 
   .modal {
@@ -1156,6 +1122,26 @@ img {
 
   .hero-wrap {
     padding: 188px;
+  }
+
+  .hero {
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../images/hero/hero-main.jpg);
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-wrap {
+      background-image: linear-gradient(
+          rgba(17, 17, 17, 0.4),
+          rgba(17, 17, 17, 0.4)
+        ),
+        url(../images/hero/hero-main@2x.jpg);
+    }
   }
 
   .hero-title {
@@ -1224,7 +1210,19 @@ img {
     margin-bottom: 0;
   }
 
+  .footer-text {
+    margin-bottom: 0;
+  }
+
   .footer-social-container {
-    margin-left: 120px;
+    margin-right: 80px;
+  }
+
+  .footer-social-list {
+    margin-bottom: 0;
+  }
+
+  .footer-form {
+    flex-wrap: nowrap;
   }
 }

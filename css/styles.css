@@ -115,11 +115,13 @@ img {
 .mob-menu {
   position: fixed;
   top: 0;
-  left: 0;
   background: #fff;
   width: 100vw;
   height: 100%;
-  padding: 16px;
+  padding-top: 72px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -155,11 +157,6 @@ img {
   flex-direction: column;
 }
 
-.mob-menu-list {
-  padding-top: 56px;
-  padding-bottom: 152px;
-}
-
 .mob-menu-item:not(:last-child) {
   margin-bottom: 40px;
 }
@@ -184,6 +181,11 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #404bbf;
+}
+
+.mob-menu-contact {
+  margin-top: auto;
+  margin-bottom: 40px;
 }
 
 .mob-address-list {
